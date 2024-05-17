@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
 </head>
-<body>
+<body onpageshow="destroyIncorrectPhone()">
     <nav id="desktop-nav">
         <div class="logo">Aidan Cruz</div>
         <div>
@@ -37,7 +37,7 @@
     </nav>
     <section id="profile">
         <div class="section_pic-container">
-            <img src="./assets/aidan-profile-pic.png" alt="Aidan Cruz Picture" onload="destroyIncorrectPhone()"/>
+            <img src="./assets/aidan-profile-pic.png" alt="Aidan Cruz Picture"/>
         </div>
         <div class="section_text">
             <p class="section_text_p1">Hi, I'm</p>
@@ -52,24 +52,24 @@
                 </button>
             </div>
             <div id="socials-container">
-                        <a href="mailto:aidancruz12@gmail.com" target="_blank">
+                        <a href="mailto:aidancruz12@gmail.com">
                             <img src="./assets/email.png"
-                            
                             alt="My Email"
                             class="icon"/>
                         </a>
-                        <a href="tel:+19132263901" id="mobile-phone">
+                        <a class="disabled" href="tel:+19132263901" id="mobile-phone">
                         <img src="./assets/phone.png"
                         alt="My Phone #"
                         class="icon"
                         />
                         </a>
-                        <img src="./assets/phone.png"
-                        alt="My Phone #"
-                        class="icon"
-                        id="desktop-phone"
+                        <span class="disabled" id="desktop-phone">
+                        <img class="icon"
                         onclick="copyNumber()"
+                        alt="My Phone #"
+                        src="./assets/phone.png"
                         />
+                        </span>
                 <a href="https://www.linkedin.com/in/aidan-cruz-7b4678281/" target="_blank">
                     <img src="./assets/linkedin.png" 
                     alt="My LinkedIn Profile" 
@@ -299,32 +299,42 @@
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
+                <a href="mailto:aidancruz12@gmail.com">
                 <img src="./assets/email.png"
                 alt ="Email Icon"
-                class="icon contact-icon"
+                class="icon"
                 />
-                <p><a href="mailto:aidancruz12@gmail.com" target="_blank">aidancruz12@gmail.com</a></p>
+                <p>aidancruz12@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
+                <a href="https://www.linkedin.com/in/aidan-cruz-7b4678281/" target="_blank">
                 <img src="./assets/linkedin.png"
                 alt ="Linkedin Icon"
-                class="icon contact-icon"
+                class="icon"
                 />
-                <p><a href="https://www.linkedin.com/in/aidan-cruz-7b4678281/" target="_blank">LinkedIn</a></p>
+                <p>LinkedIn</a></p>
             </div>
             <div class="contact-info-container">
+                <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage" target="_blank">
                 <img src="./assets/indeed.png"
                 alt ="Indeed Icon"
-                class="icon contact-icon"
+                class="icon"
                 />
                 <p><a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage" target="_blank">Indeed</a></p>
             </div>
-            <div class="contact-info-container">
+            <div class="disabled" id="bottom-mobile-phone">
                 <a href="tel:+19132263901">
                 <img src="./assets/phone.png"
                 alt ="Phone Icon"
-                class="icon contact-icon"/>
+                class="icon"/>
                 <p>913-226-3901</a></p>
+            </div>
+            <div class="disabled" id="bottom-desktop-phone">
+                <img src="./assets/phone.png"
+                onclick="copyNumber()"
+                alt ="Phone Icon"
+                class="icon"/>
+                <p>913-226-3901</p>
             </div>
         </div>
     </section>
