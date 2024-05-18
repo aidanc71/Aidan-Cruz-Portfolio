@@ -6,8 +6,15 @@
     <title>Aidan Cruz Portfolio</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
+    <script src="https://kit.fontawesome.com/7e2749952b.js" crossorigin="anonymous"></script>
 </head>
 <body onpageshow="destroyIncorrectPhone()">
+    <div class="disabled alert" id="copy-alert">
+        <span id="alert-message"></span>
+        <span class="close-btn" id="copy-alert-close-btn" onclick="closeAlert()">
+            <span class="fa-solid fa-circle-xmark"></span>
+        </span> 
+    </div>
     <nav id="desktop-nav">
         <div class="logo">Aidan Cruz</div>
         <div>
@@ -44,7 +51,7 @@
             <h1 class="title">Aidan Cruz</h1>
             <p class="section_text_p2">Aspiring Game Designer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
                     Download Resume
                 </button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -111,7 +118,7 @@
                     alt="Education Icon" 
                     class="icon"/>
                     <h3>Education</h3>
-                    <p>Highschool Diploma <br/> Attending ECC</p>
+                    <p>Highschool Diploma <br/>Attending ECC</p>
                 </div>
                 </div> 
                 <div class="text-container">
