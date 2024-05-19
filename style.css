@@ -39,7 +39,8 @@ p {
     top: var(--alert-top-offset);
     overflow: hidden;
     border-radius: 4px;
-    border-left: 8px solid rgb(172, 7, 29);
+    border-left: 8px solid rgb(0, 0, 0);
+    z-index: 10;
     opacity: 0;
     pointer-events: none;
 }
@@ -281,6 +282,72 @@ section {
     margin-bottom: 1rem;
 }
 
+.type-animation-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 300px;
+}
+
+.type-animation-text span {
+    position: relative;
+}
+
+.type-animation-text span::before {
+    content: 'Aspiring Game Designer';
+    color: rgb(85, 85, 85);
+    animation: words 15s infinite;
+}
+
+.type-animation-text span::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid white;
+    right: 0px;
+    animation: cursor 0.6s infinite, typing 15s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid rgb(85, 85, 85);
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Game Designer";
+    }
+    21%, 40% {
+        content: "Web Developer";
+    }
+    41%, 60% {
+        content: "Video Editor";
+    }
+    61%, 80% {
+        content: "17 Year Old";
+    }
+    81%, 100% {
+        content: "Team Player";
+    }
+}
+
+@keyframes typing {
+    10%, 15%,
+    30%, 35%,
+    50%, 55%,
+    70%, 75%,
+    90%, 95% {
+        width: 0;
+    }
+    5%, 20%,
+    25%, 40%,
+    45%, 60%,
+    65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
 .title {
     font-size: 3rem;
     text-align: center;
