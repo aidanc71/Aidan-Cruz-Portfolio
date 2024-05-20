@@ -93,7 +93,7 @@
     }
 
     #intro-text {
-      margin-inline-start: auto; 
+      margin-inline-start: auto;
     }
 
     #name-text {
@@ -103,14 +103,32 @@
     .section_text_p1 {
       justify-self: center;
     }
+
     .section_text_p2 {
-      position: absolute;
+      width: 23rem;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-inline-start: 1rem;
+      text-align: right;
       font-size: 1.25rem;
-      margin-bottom: 1rem;
     }
+
+   .type-animation-text {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-inline-start: auto;
+      place-content: center;
+      text-align: center;
+  } 
+    
     .title {
       font-size: 2rem;
     }
+
     .text-container {
       text-align: justify;
     }

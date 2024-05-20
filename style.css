@@ -304,7 +304,7 @@ section {
 }
 
 .type-animation-text span::before {
-    content: 'Game Designer';
+    content: '';
     color: rgb(85, 85, 85);
     animation: words 15s infinite;
     width: (100% + 8px);
