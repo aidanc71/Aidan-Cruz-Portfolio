@@ -259,6 +259,7 @@ section {
 
 .section_pic-container {
     display: flex;
+    position: relative;
     height: 400px;
     width: 400px;
     margin: auto 0;
@@ -273,6 +274,14 @@ section {
     font-weight: 600;
 }
 
+#intro-text {
+    margin-inline-start: -25rem;
+}
+
+#name-text {
+    margin-inline-start: -8rem;
+}
+
 .section_text_p1 {
     text-align: center;
 }
@@ -280,6 +289,8 @@ section {
 .section_text_p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    position: absolute; /* change here */
+    margin-inline-start: -1.5rem;
 }
 
 .type-animation-text {
@@ -293,9 +304,10 @@ section {
 }
 
 .type-animation-text span::before {
-    content: 'Aspiring Game Designer';
+    content: 'Game Designer';
     color: rgb(85, 85, 85);
     animation: words 15s infinite;
+    width: (100% + 8px);
 }
 
 .type-animation-text span::after {
@@ -326,10 +338,10 @@ section {
         content: "Video Editor";
     }
     61%, 80% {
-        content: "17 Year Old";
+        content: "Content Creator";
     }
     81%, 100% {
-        content: "Team Player";
+        content: "Employee";
     }
 }
 
@@ -373,6 +385,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 5rem; /* change here */
 }
 
 .btn {

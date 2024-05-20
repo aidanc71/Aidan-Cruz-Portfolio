@@ -91,8 +91,22 @@
       height: 46vw;
       justify-content: center;
     }
+
+    #intro-text {
+      margin-inline-start: auto; 
+    }
+
+    #name-text {
+      margin-inline-start: auto;
+    }
+
+    .section_text_p1 {
+      justify-self: center;
+    }
     .section_text_p2 {
+      position: absolute;
       font-size: 1.25rem;
+      margin-bottom: 1rem;
     }
     .title {
       font-size: 2rem;
