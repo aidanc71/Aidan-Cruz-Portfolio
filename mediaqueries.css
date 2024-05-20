@@ -119,8 +119,8 @@
       */
     }
 
-   .type-animation-text {
-    /*
+  /* .type-animation-text {
+    
       margin-left: 0;
       margin-right: 0;
       margin-top: 0;
@@ -128,8 +128,9 @@
       margin-inline-start: 0;
       place-content: center;
       text-align: center;
-      */
+     
   } 
+  */
     
     .title {
       font-size: 2rem;

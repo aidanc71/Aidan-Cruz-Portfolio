@@ -305,7 +305,8 @@ section {
 
 .type-animation-text span::before {
     content: '';
-    color: rgb(85, 85, 85);
+    color: rgb(35, 110, 96);
+    background-blend-mode: color-burn;
     animation: words 15s infinite;
     width: (100% + 8px);
 }
@@ -323,7 +324,7 @@ section {
 
 @keyframes cursor {
     to {
-        border-left: 2px solid rgb(85, 85, 85);
+        border-left: 1px solid rgb(85, 85, 85);
     }
 }
 
