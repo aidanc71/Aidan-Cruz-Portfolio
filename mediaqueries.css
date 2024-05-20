@@ -105,24 +105,30 @@
     }
 
     .section_text_p2 {
-      width: 18rem;
+      
+      width: 2rem;
+      font-size: 1.25rem;
+      text-align: center;
+      /*
       margin-left: 0;
       margin-right: 0;
       margin-top: 0;
       margin-bottom: 0;
-      margin-inline-start: 1rem;
-      text-align: right;
-      font-size: 1.25rem;
+      
+      margin-inline-start: 0rem;
+      */
     }
 
    .type-animation-text {
+    /*
       margin-left: 0;
       margin-right: 0;
       margin-top: 0;
       margin-bottom: 0;
-      margin-inline-start: auto;
+      margin-inline-start: 0;
       place-content: center;
       text-align: center;
+      */
   } 
     
     .title {
