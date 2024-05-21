@@ -109,13 +109,24 @@
 
     .section_text_p2 {
       font-size: 1.25rem;
-      width: 90%; 
+      width: 90%;
+      display: flex;
       left: auto;
       right: auto;
       margin-inline-start: 0;
+
+      transition: transform 0.5s ease-in-out 0s;
+      animation-name: aspiring;
+      animation-duration: 15s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-fill-mode: none; 
     }
 
     .type-animation-text {
+      align-self:normal;
       right: auto;
       left: auto;
       /*
@@ -125,13 +136,74 @@
       margin-inline-start: 0;
       text-align: center; 
       */
-    } 
-    
-    .title {
-      font-size: 2rem;
     }
-
-    .text-container {
-      text-align: justify;
-    }
+    .type-animation-text span::before {
+      content: '';
+      color: rgb(35, 110, 96);
+      animation: words 15s infinite;
+      width: (100% + 4px);
   }
+  
+  .type-animation-text span::after {
+      content: '';
+      position: absolute;
+      background-color: white;
+      width: calc(100% + 4px);
+      height: 100%;
+      border-left: 3px solid white;
+      right: 0px;
+      animation: cursor 0.6s infinite, typing 15s steps(15) infinite;
+  }
+  
+    @keyframes aspiring {
+      99%, 20% {
+          transform: translateX(+3.5rem);
+      }
+      21%, 40% {
+          transform: translateX(+3.5rem);
+      }
+      41%, 60% {
+          transform: translateX(+4.5rem);
+      }
+      61%, 80% {
+          transform: translateX(+3rem);
+      }
+      81%, 98% {
+          transform: translateX(+5rem);
+      }
+  }
+
+  @keyframes words {
+    0%, 20% {
+        content: "Game Designer";
+    }
+    21%, 40% {
+        content: "Web Developer";
+    }
+    41%, 60% {
+        content: "Video Editor";
+    }
+    61%, 80% {
+        content: "Content Creator";
+    }
+    81%, 100% {
+        content: "Employee";
+    }
+}
+@keyframes typing {
+    10%, 15%,
+    30%, 35%,
+    50%, 55%,
+    70%, 75%,
+    90%, 95% {
+        width: 0;
+    }
+    5%, 20%,
+    25%, 40%,
+    45%, 60%,
+    65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+ }
+ 
+}

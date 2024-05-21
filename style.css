@@ -160,7 +160,10 @@ a {
 }
 
 .logo:hover {
-    cursor: default;
+    cursor: pointer;
+    color: rgb(55, 0, 255);
+    transform: translateX(-10px);
+    transition: transform 0.3s linear 0s;
 }
 
 /*  HAMBURGER MENU */
@@ -169,9 +172,11 @@ a {
 }
 
 .hamburger-menu {
+    z-index: 9;
     position: relative;
     display: inline-block;
-}
+    background-color: white; opacity: 75%;
+} 
 
 .hamburger-icon {
     display: flex;
@@ -304,6 +309,14 @@ section {
     font-size: 34px;
     font-weight: 600;
     min-width: 300px;
+
+    /*animation-name: aspiring;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none; */
 }
 
 .type-animation-text span {
@@ -313,7 +326,6 @@ section {
 .type-animation-text span::before {
     content: '';
     color: rgb(35, 110, 96);
-    background-blend-mode: color-burn;
     animation: words 15s infinite;
     width: (100% + 4px);
 }
@@ -328,6 +340,25 @@ section {
     right: 0px;
     animation: cursor 0.6s infinite, typing 15s steps(13) infinite;
 }
+/*
+@keyframes aspiring {
+    0%, 20% {
+        transform: translateX(0);
+    }
+    21%, 40% {
+        transform: translateX(0);
+    }
+    41%, 60% {
+        transform: translateX(0);
+    }
+    61%, 80% {
+        transform: translateX(0);
+    }
+    81%, 100% {
+        transform: translateX(0);
+    }
+}
+*/
 
 @keyframes cursor {
     to {
