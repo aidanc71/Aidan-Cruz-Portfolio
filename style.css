@@ -24,6 +24,10 @@ p {
     display: none;
 }
 
+.space-character {
+    font-size: xx-small;
+}
+
 /* ALERT */
 
 :root {
@@ -253,13 +257,16 @@ section {
 #profile {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     height: 80vh;
 }
 
 .section_pic-container {
     display: flex;
     position: relative;
+    right: 4rem;
     height: 400px;
     width: 400px;
     margin: auto 0;
@@ -308,18 +315,18 @@ section {
     color: rgb(35, 110, 96);
     background-blend-mode: color-burn;
     animation: words 15s infinite;
-    width: (100% + 8px);
+    width: (100% + 4px);
 }
 
 .type-animation-text span::after {
     content: '';
     position: absolute;
     background-color: white;
-    width: calc(100% + 8px);
+    width: calc(100% + 4px);
     height: 100%;
     border-left: 3px solid white;
     right: 0px;
-    animation: cursor 0.6s infinite, typing 15s steps(14) infinite;
+    animation: cursor 0.6s infinite, typing 15s steps(13) infinite;
 }
 
 @keyframes cursor {
