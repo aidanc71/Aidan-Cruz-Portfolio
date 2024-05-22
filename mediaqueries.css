@@ -157,7 +157,7 @@
   
     @keyframes aspiring {
       0%, 19% {
-          transform: translateX(+3.1rem);
+          transform: translateX(+2.7rem);
       }
       20%, 39% {
           transform: translateX(+3.1rem);
@@ -169,7 +169,7 @@
           transform: translateX(+4.5rem);
       }
       81%, 100% {
-          transform: translateX(+3rem);
+          transform: translateX(+2.75rem);
       }
   }
 
@@ -178,7 +178,7 @@
         content: "Game Designer";
     }
     21%, 40% {
-        content: "Web Developer";
+        content: "Content Creator";
     }
     41%, 60% {
         content: "Video Editor";
@@ -187,7 +187,7 @@
         content: "Employee";
     }
     81%, 100% {
-        content: "Content Creator";
+        content: "Web Developer";
     }
 
 }
