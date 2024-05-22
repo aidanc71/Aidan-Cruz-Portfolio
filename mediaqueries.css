@@ -126,7 +126,7 @@
     }
 
     .type-animation-text {
-      align-self:normal;
+      align-self: normal;
       right: auto;
       left: auto;
       /*
@@ -152,24 +152,24 @@
       height: 100%;
       border-left: 3px solid white;
       right: 0px;
-      animation: cursor 0.6s infinite, typing 15s steps(15) infinite;
+      animation: cursor 0.6s infinite, typing 15s steps(12) infinite;
   }
   
     @keyframes aspiring {
-      99%, 20% {
-          transform: translateX(+3.5rem);
+      0%, 19% {
+          transform: translateX(+3.2rem);
       }
-      21%, 40% {
-          transform: translateX(+3.5rem);
+      20%, 39% {
+          transform: translateX(+3.1rem);
       }
-      41%, 60% {
+      40%, 59% {
+          transform: translateX(+4.1rem);
+      }
+      60%, 79% {
           transform: translateX(+4.5rem);
       }
-      61%, 80% {
-          transform: translateX(+3rem);
-      }
-      81%, 98% {
-          transform: translateX(+5rem);
+      81%, 100% {
+          transform: translateX(+3.1rem);
       }
   }
 
@@ -184,11 +184,12 @@
         content: "Video Editor";
     }
     61%, 80% {
-        content: "Content Creator";
-    }
-    81%, 100% {
         content: "Employee";
     }
+    81%, 100% {
+        content: "Content Creator";
+    }
+
 }
 @keyframes typing {
     10%, 15%,
