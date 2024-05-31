@@ -139,7 +139,6 @@
     }
     .type-animation-text span::before {
       content: '';
-      color: rgb(35, 110, 96);
       animation: words 15s infinite;
       width: (100% + 4px);
   }
@@ -147,10 +146,8 @@
   .type-animation-text span::after {
       content: '';
       position: absolute;
-      background-color: white;
       width: calc(100% + 4px);
       height: 100%;
-      border-left: 3px solid white;
       right: 0px;
       animation: cursor 0.6s infinite, typing 15s steps(12) infinite;
   }

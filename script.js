@@ -37,7 +37,7 @@ function copyNumber()
     alertMessage.innerHTML = "Copied Number +1 (913)-226-3901 To Clipboard"
     navigator.clipboard.writeText("+1 (913) 226 3901");
     
-    let alertTopOffset = (window.scrollY).toString() + "px";
+    let alertTopOffset = (window.scrollY + 90).toString() + "px";
     copyAlert.style.setProperty("--alert-top-offset", alertTopOffset);
 
     copyAlert.classList.remove("disabled");
