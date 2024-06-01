@@ -1,5 +1,5 @@
 let funStyle = localStorage.getItem("funStyle");
-const pageStyleToggle = document.querySelector(".page-style-toggle");
+const pageStyleToggle = document.querySelector("#page-style-toggle");
 
 const enableFunStyle = () => {
     document.body.classList.add("funStyle");

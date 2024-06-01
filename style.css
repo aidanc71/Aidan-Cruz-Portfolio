@@ -45,7 +45,11 @@ p {
 }
 
 /* Style Selector */
-.page-style-toggle {
+.bg-toggle-container {
+    position: absolute;
+    margin-top: 2.5rem;
+}
+#page-style-toggle {
     align-self: center;
     height: 2.5rem;
 
@@ -167,6 +171,7 @@ nav, .nav-links {
 }
 
 nav {
+    padding-left: 20dvh;
     justify-content: space-around;
     align-items: center;
     height: 17vh;
