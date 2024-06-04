@@ -45,10 +45,46 @@ p {
 }
 
 /* Style Selector */
-.bg-toggle-container {
+
+.bg-icon {
     position: absolute;
     margin-top: 2.5rem;
 }
+.bg-menu {
+    position: relative;
+    display: inline-block;
+}
+.bg-buttons{
+    max-height: 0;
+    overflow: hidden;
+}
+.bg-buttons.open {
+    opacity: 100%;
+    max-height: 300px;
+    height: fit-content;
+}
+.bg-buttons-menu {
+    max-height: 0px;
+}
+.bg-buttons-menu.open {
+    max-height: 3000px;
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 100px;
+    border-left-color: yellow;
+    border-right-color: yellow;
+    border-top-color: yellow;
+    border-bottom-color: yellow;
+}
+.bg-buttons.open img{
+
+}
+
+.bg-button {
+    width: 3rem;
+}
+
 #page-style-toggle {
     align-self: center;
     height: 2.5rem;
@@ -57,8 +93,17 @@ p {
     border-color: transparent;
     cursor: pointer;
 }
-.funStyle {
-    --primary-color: rgb(20, 167, 101);
+.purpleStyle {
+    --primary-color: purple;/*--primary-color: rgb(20, 167, 101);*/
+    --secondary-color: white;
+
+    --primary-text-color: white;
+    --secondary-text-color: aqua;
+
+    --alert-top-offset: 625px;
+}
+.greenStyle {
+    --primary-color: green;/*--primary-color: rgb(20, 167, 101);*/
     --secondary-color: white;
 
     --primary-text-color: white;
@@ -171,7 +216,6 @@ nav, .nav-links {
 }
 
 nav {
-    padding-left: 20dvh;
     justify-content: space-around;
     align-items: center;
     height: 17vh;
@@ -207,6 +251,8 @@ a {
 
 /*  HAMBURGER MENU */
 #hamburger-nav {
+    float: right;
+    gap: 1rem;
     display: none;
 }
 
@@ -259,6 +305,7 @@ a {
 }
 
 .menu-links.open {
+    background-color: var(--secondary-text-color);
     max-height: 300px;
 }
 

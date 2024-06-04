@@ -15,7 +15,18 @@
             <span class="fa-solid fa-circle-xmark"></span>
         </span> 
     </div>
-    <div class = bg-toggle-container> <img src="assets/backgroundIcon.png" alt="Change Background" id ="page-style-toggle" aria-label="Switch Style"/> </div>
+    <div class="bg-menu">
+    <div class = "bg-icon">
+    <img src="assets/backgroundIcon.png"  onclick="toggleBgMenu()" alt="Change Background" id ="page-style-toggle" aria-label="Switch Style"/>
+    </div>
+    <div class="bg-buttons-menu">
+    <div class="bg-buttons">
+    <img src="assets/bg buttons/green bg button.png" class="bg-button" id="green-style-button" onclick="toggleBgMenu()"/>
+    <img src="assets/bg buttons/purple bg button.png" class="bg-button" id="purple-style-button" onclick="toggleBgMenu()"/>
+    <img src="assets/bg buttons/white bg button.png" class="bg-button" id="white-style-button" onclick="toggleBgMenu()"/>
+    </div>
+    </div>
+    </div>
     <nav id="desktop-nav">
         <div class="logo">Aidan Cruz</div>
         <div>
@@ -97,6 +108,7 @@
         </div>
     </section>
    <section id="about">
+    <br>
         <p class="section_text_p1"> Discover More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">

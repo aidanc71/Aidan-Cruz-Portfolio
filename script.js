@@ -8,6 +8,14 @@ function toggleMenu()
     icon.classList.toggle("open")
 }
 
+function toggleBgMenu()
+{
+    const bgMenu = document.querySelector(".bg-buttons-menu");
+    bgMenu.classList.toggle("open")
+    const bgButtons = document.querySelector(".bg-buttons");
+    bgButtons.classList.toggle("open")
+}
+
 function destroyIncorrectPhone()
 {
     const bottomMobilePhoneIcon = document.getElementById("bottom-mobile-phone")
