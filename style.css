@@ -34,6 +34,7 @@ p {
     font-size: xx-small;
 }
 
+/* Style Selector */
 :root {
     --primary-color: white;
     --secondary-color: black;
@@ -41,14 +42,79 @@ p {
     --primary-text-color: black;
     --secondary-text-color: aqua;
 
+    --bg-menu-color: black;
+
+    --alert-top-offset: 625px;
+}
+.darkStyle {
+    --primary-color: black;
+    --secondary-color: white;
+
+    --primary-text-color: white;
+    --secondary-text-color: aqua;
+
+    --bg-menu-color: white;
+
+    --alert-top-offset: 625px;
+}
+.redStyle {
+    --primary-color: red;
+    --secondary-color: white;
+
+    --primary-text-color: white;
+    --secondary-text-color: aqua;
+
+    --alert-top-offset: 625px;
+}
+.orangeStyle {
+    --primary-color: orange;
+    --secondary-color: white;
+
+    --primary-text-color: white;
+    --secondary-text-color: aqua;
+
+    --alert-top-offset: 625px;
+}
+.yellowStyle {
+    --primary-color: yellow;
+    --secondary-color: white;
+
+    --primary-text-color: white;
+    --secondary-text-color: aqua;
+
+    --alert-top-offset: 625px;
+}
+.greenStyle {
+    --primary-color: green;/*--primary-color: rgb(20, 167, 101);*/
+    --secondary-color: white;
+
+    --primary-text-color: white;
+    --secondary-text-color: aqua;
+
+    --alert-top-offset: 625px;
+}
+.blueStyle {
+    --primary-color: blue;
+    --secondary-color: white;
+
+    --primary-text-color: white;
+    --secondary-text-color: aqua;
+
+    --alert-top-offset: 625px;
+}
+.purpleStyle {
+    --primary-color: purple;
+    --secondary-color: white;
+
+    --primary-text-color: white;
+    --secondary-text-color: aqua;
+
     --alert-top-offset: 625px;
 }
 
-/* Style Selector */
-
 .bg-icon {
-    position: absolute;
-    margin-top: 2.5rem;
+    position: relative;
+    margin-top: 2dvh;
 }
 .bg-menu {
     position: relative;
@@ -68,17 +134,9 @@ p {
 }
 .bg-buttons-menu.open {
     max-height: 3000px;
-    background-color: black;
+    background-color: var(--bg-menu-color);
     width: fit-content;
     height: fit-content;
-    margin-top: 100px;
-    border-left-color: yellow;
-    border-right-color: yellow;
-    border-top-color: yellow;
-    border-bottom-color: yellow;
-}
-.bg-buttons.open img{
-
 }
 
 .bg-button {
@@ -93,26 +151,6 @@ p {
     border-color: transparent;
     cursor: pointer;
 }
-.purpleStyle {
-    --primary-color: purple;/*--primary-color: rgb(20, 167, 101);*/
-    --secondary-color: white;
-
-    --primary-text-color: white;
-    --secondary-text-color: aqua;
-
-    --alert-top-offset: 625px;
-}
-.greenStyle {
-    --primary-color: green;/*--primary-color: rgb(20, 167, 101);*/
-    --secondary-color: white;
-
-    --primary-text-color: white;
-    --secondary-text-color: aqua;
-
-    --alert-top-offset: 625px;
-}
-
-
 /* ALERT */
 
 .alert {
