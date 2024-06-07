@@ -41,7 +41,7 @@ p {
 
     --primary-text-color: black;
     --secondary-text-color: aqua;
-    --details-container-text-color: var(--primary-color);
+    --details-container-text-color: var(--primary-text-color);
 
     --details-conatiner-bg-color: var(--primary-color);
     --bg-menu-color: black;
