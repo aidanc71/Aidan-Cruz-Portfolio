@@ -14,9 +14,20 @@ const blueStyleButton = document.querySelector("#blue-style-button");
 let purpleStyle = localStorage.getItem("purpleStyle");
 const purpleStyleButton = document.querySelector("#purple-style-button");
 
-const whiteBgIcon = document.querySelector("#bg-icon-white");
-const blackBgIcon = document.querySelector("#bg-icon-black")
+/*const whiteBgIcon = document.querySelector("#bg-icon-white");
+const blackBgIcon = document.querySelector("#bg-icon-black")*/
 
+const whiteIcons = document.querySelectorAll(".white-icon");
+const blackIcons = document.querySelectorAll(".black-icon");
+
+const blackMobilePhoneIcon = document.querySelector("#mobile-phone");
+const blackDesktopPhoneIcon = document.querySelector("#desktop-phone");
+const whiteMobilePhoneIcon = document.querySelector("#mobile-phone-white");
+const whiteDesktopPhoneIcon = document.querySelector("#desktop-phone-white");
+const bottomBlackMobilePhoneIcon = document.querySelector("#bottom-mobile-phone");
+const bottomBlackDesktopPhoneIcon = document.querySelector("#bottom-desktop-phone");
+const bottomWhiteMobilePhoneIcon = document.querySelector("#bottom-mobile-phone-white");
+const bottomWhiteDesktopPhoneIcon = document.querySelector("#bottom-desktop-phone-white");
 /*
 let Style = localStorage.getItem("Style");
 const StyleButton = document.querySelector("#-style-button");
@@ -41,12 +52,58 @@ const disableAllStyles = () => {
     /*document.body.classList.remove("Style");*/
 };
 
+const enableWhiteIcons = () => 
+    {
+        blackIcons.forEach(icon => {
+            icon.classList.add("disabled");
+        })
+        whiteIcons.forEach(icon => {
+            
+            icon.classList.remove("disabled");
+        })
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
+        {
+            blackMobilePhoneIcon.classList.add("disabled");
+            bottomBlackMobilePhoneIcon.classList.add("disabled");
+            whiteMobilePhoneIcon.classList.remove("disabled");
+            bottomWhiteMobilePhoneIcon.classList.remove("disabled");
+        }
+        else
+        {
+            blackDesktopPhoneIcon.classList.add("disabled");
+            bottomBlackDesktopPhoneIcon.classList.add("disabled");
+            whiteDesktopPhoneIcon.classList.remove("disabled");
+            bottomWhiteDesktopPhoneIcon.classList.remove("disabled");
+        }
+    }
+const enableBlackIcons = () =>
+    {
+        whiteIcons.forEach(icon => {
+            icon.classList.add("disabled");
+        })
+        blackIcons.forEach(icon => {
+            icon.classList.remove("disabled");
+        })
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
+            {
+                whiteMobilePhoneIcon.classList.add("disabled");
+                bottomWhiteMobilePhoneIcon.classList.add("disabled");
+                blackMobilePhoneIcon.classList.remove("disabled");
+                bottomBlackMobilePhoneIcon.classList.remove("disabled");
+            }
+            else
+            {
+                whiteDesktopPhoneIcon.classList.add("disabled");
+                bottomWhiteDesktopPhoneIcon.classList.add("disabled");
+                blackDesktopPhoneIcon.classList.remove("disabled");
+                bottomBlackDesktopPhoneIcon.classList.remove("disabled");
+            }
+    }
+
 whiteStyleButton.addEventListener("click", () => 
 {
     disableAllStyles();
-    blackBgIcon.classList.remove("disabled");
-    whiteBgIcon.classList.add("disabled")
-    
+    enableBlackIcons();
 });
 
 darkStyleButton.addEventListener("click", () => 
@@ -56,8 +113,7 @@ darkStyleButton.addEventListener("click", () =>
     {
     disableAllStyles();
     document.body.classList.add("darkStyle");
-    whiteBgIcon.classList.remove("disabled")
-    blackBgIcon.classList.add("disabled");
+    enableWhiteIcons();
     localStorage.setItem("darkStyle", "enabled");
     }
     else 
@@ -73,8 +129,7 @@ redStyleButton.addEventListener("click", () =>
     {
     disableAllStyles();
     document.body.classList.add("redStyle");
-    blackBgIcon.classList.remove("disabled");
-    whiteBgIcon.classList.add("disabled")
+    enableBlackIcons();
     localStorage.setItem("redStyle", "enabled");
     }
     else 
@@ -90,8 +145,7 @@ orangeStyleButton.addEventListener("click", () =>
     {
     disableAllStyles();
     document.body.classList.add("orangeStyle");
-    blackBgIcon.classList.remove("disabled");
-    whiteBgIcon.classList.add("disabled")
+    enableBlackIcons();
     localStorage.setItem("orangeStyle", "enabled");
     }
     else 
@@ -107,8 +161,7 @@ yellowStyleButton.addEventListener("click", () =>
     {
     disableAllStyles();
     document.body.classList.add("yellowStyle");
-    blackBgIcon.classList.remove("disabled");
-    whiteBgIcon.classList.add("disabled")
+    enableBlackIcons();
     localStorage.setItem("yellowStyle", "enabled");
     }
     else 
@@ -123,8 +176,7 @@ greenStyleButton.addEventListener("click", () =>
     {
     disableAllStyles();
     document.body.classList.add("greenStyle");
-    blackBgIcon.classList.remove("disabled");
-    whiteBgIcon.classList.add("disabled")
+    enableBlackIcons();
     localStorage.setItem("greenStyle", "enabled");
     }
     else 
@@ -140,8 +192,7 @@ blueStyleButton.addEventListener("click", () =>
     {
     disableAllStyles();
     document.body.classList.add("blueStyle");
-    blackBgIcon.classList.remove("disabled");
-    whiteBgIcon.classList.add("disabled")
+    enableBlackIcons();
     localStorage.setItem("blueStyle", "enabled");
     }
     else 
@@ -157,8 +208,7 @@ purpleStyleButton.addEventListener("click", () =>
     {
     disableAllStyles();
     document.body.classList.add("purpleStyle");
-    blackBgIcon.classList.remove("disabled");
-    whiteBgIcon.classList.add("disabled")
+    enableBlackIcons();
     localStorage.setItem("purpleStyle", "enabled");
     }
     else 

@@ -41,7 +41,9 @@ p {
 
     --primary-text-color: black;
     --secondary-text-color: aqua;
+    --details-container-text-color: var(--primary-color);
 
+    --details-conatiner-bg-color: var(--primary-color);
     --bg-menu-color: black;
 
     --alert-top-offset: 625px;
@@ -52,8 +54,10 @@ p {
 
     --primary-text-color: white;
     --secondary-text-color: aqua;
+    --details-container-text-color: black;
 
     --bg-menu-color: white;
+    --details-conatiner-bg-color: white;
 
     --alert-top-offset: 625px;
 }
@@ -620,11 +624,15 @@ section {
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: var(--primary-color);
+    background-color: var(--details-conatiner-bg-color);;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+}
+
+.details-container p {
+    color: var(--details-container-text-color);
 }
 
 .section-container {
@@ -715,12 +723,19 @@ article .icon {
 
 .contact-info-upper-container {
     display: flex;
+    background-color: var(--details-conatiner-bg-color);
     justify-content: center;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     margin: 2rem auto;
     padding: 0.5rem;
+}
+.contact-info-upper-container p {
+    color: var(--details-container-text-color);
+}
+.contact-info-upper-container a {
+    color: var(--details-container-text-color);
 }
 
 .contact-info-container {

@@ -20,8 +20,12 @@ function destroyIncorrectPhone()
 {
     const bottomMobilePhoneIcon = document.getElementById("bottom-mobile-phone")
     const bottomDesktopPhoneIcon = document.getElementById("bottom-desktop-phone")
+    const bottomMobilePhoneIconWhite = document.getElementById("bottom-mobile-phone-white")
+    const bottomDesktopPhoneIconWhite = document.getElementById("bottom-desktop-phone-white")
     const mobilePhoneIcon = document.getElementById("mobile-phone")
     const desktopPhoneIcon = document.getElementById("desktop-phone")
+    const mobilePhoneIconWhite = document.getElementById("mobile-phone-white")
+    const desktopPhoneIconWhite = document.getElementById("desktop-phone-white")
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
     {
         mobilePhoneIcon.classList.remove("disabled");

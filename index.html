@@ -16,10 +16,10 @@
         </span> 
     </div>
     <div class="bg-menu">
-        <div class = "bg-icon" id="bg-icon-black">
+        <div class = "bg-icon black-icon" id="bg-icon-black">
         <img src="assets/backgroundIcon.png"  onclick="toggleBgMenu()" alt="Change Background" id ="page-style-toggle" aria-label="Switch Style"/>
         </div>
-        <div class ="bg-icon disabled" id ="bg-icon-white">
+        <div class ="bg-icon white-icon disabled" id ="bg-icon-white">
         <img src="assets/whiteBackgroundIcon.png"  onclick="toggleBgMenu()" alt="Change Background" id ="page-style-toggle" aria-label="Switch Style"/>
         </div>
         <div class="bg-buttons-menu">
@@ -79,17 +79,29 @@
                 </button>
             </div>
             <div id="socials-container">
-                        <a href="mailto:aidancruz12@gmail.com">
+                        <a href="mailto:aidancruz12@gmail.com" class="black-icon">
                             <img src="./assets/email.png"
                             alt="My Email"
                             class="icon"/>
                         </a>
+                        <a href="mailto:aidancruz12@gmail.com" class="white-icon disabled">
+                            <img src="./assets/white emai icon.png"
+                            alt="My Email"
+                            class="icon"/>
+                        </a>
+                        
                         <a class="disabled" href="tel:+19132263901" id="mobile-phone">
                         <img src="./assets/phone.png"
                         alt="My Phone #"
                         class="icon"
                         />
                         </a>
+                        <a class="disabled" href="tel:+19132263901" id="mobile-phone-white">
+                            <img src="./assets/white phone icon.png"
+                            alt="My Phone #"
+                            class="icon"
+                            />
+                            </a>
                         <span class="disabled" id="desktop-phone">
                         <img class="icon"
                         onclick="copyNumber()"
@@ -97,18 +109,40 @@
                         src="./assets/phone.png"
                         />
                         </span>
-                <a href="https://www.linkedin.com/in/aidan-cruz-7b4678281/" target="_blank">
+                        <span class="disabled" id="desktop-phone-white">
+                            <img class="icon"
+                            onclick="copyNumber()"
+                            alt="My Phone #"
+                            src="./assets/white phone icon.png"
+                            />
+                            </span>
+                <a href="https://www.linkedin.com/in/aidan-cruz-7b4678281/" target="_blank" class="black-icon">
                     <img src="./assets/linkedin.png" 
                     alt="My LinkedIn Profile" 
                     class="icon"/>
                 </a>
-                <a href="https://github.com/aidanc71" target="_blank">
+                <a href="https://www.linkedin.com/in/aidan-cruz-7b4678281/" target="_blank" class="white-icon disabled">
+                    <img src="./assets/linkedin white icon.png" 
+                    alt="My LinkedIn Profile" 
+                    class="icon"/>
+                </a>
+                <a href="https://github.com/aidanc71" target="_blank" class="black-icon">
                     <img src="./assets/github.png" 
                     alt="My Github Profile" 
                     class="icon"/>
                 </a>
-                <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage" target="_blank">
+                <a href="https://github.com/aidanc71" target="_blank" class="white-icon disabled">
+                    <img src="./assets/github white icon.png" 
+                    alt="My Github Profile" 
+                    class="icon"/>
+                </a>
+                <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage" target="_blank" class="black-icon">
                     <img src="./assets/indeed.png"
+                    alt ="Indeed Icon"
+                    class="icon"/>
+                </a>
+                <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage" target="_blank" class="white-icon disabled">
+                    <img src="./assets/indeed white icon.png"
                     alt ="Indeed Icon"
                     class="icon"/>
                 </a>
