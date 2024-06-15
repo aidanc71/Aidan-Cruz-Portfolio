@@ -59,7 +59,9 @@ function copyNumber()
     setTimeout(function(){
         copyAlert.classList.add("hide");
     }, 3000);
-    
+    setTimeout(function(){
+        copyAlert.classList.add("disabled");
+    }, 4000);
 }
 
 function closeAlert()

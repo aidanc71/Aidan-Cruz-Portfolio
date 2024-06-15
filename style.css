@@ -39,6 +39,14 @@ p {
     --primary-color: white;
     --secondary-color: black;
 
+    --button-color: var(--secondary-text-color);
+    --container-button-color: var(--secondary-color);
+    --button-text-color: var(--secondary-color);
+    --container-button-text-color: var(--primary-color);
+    --button-hover-text-color: var(--secondary-text-color);
+    --button-hover-color: var(--secondary-color);
+    --button-hover-color-2: var(--secondary-color);
+
     --primary-text-color: black;
     --secondary-text-color: rgb(146, 255, 188);
     --details-container-text-color: var(--primary-text-color);
@@ -52,6 +60,14 @@ p {
     --primary-color: black;
     --secondary-color: white;
 
+    --button-color: var(--secondary-text-color);
+    --container-button-color: var(--secondary-text-color);
+    --button-text-color: var(--secondary-color);
+    --container-button-text-color: var(--primary-color);
+    --button-hover-text-color: var(--secondary-text-color);
+    --button-hover-color: rgb(38, 41, 49);
+    --button-hover-color-2: var(--secondary-color);
+
     --primary-text-color: white;
     --details-container-text-color: black;
 
@@ -63,6 +79,16 @@ p {
 .redStyle {
     --primary-color: red;
     --secondary-color: black;
+    --secondary-text-color: rgb(228, 209, 84);
+
+    --button-color: var(--secondary-text-color);
+    --container-button-color: var(--secondary-color);
+    --button-text-color: var(--secondary-color);
+    --container-button-text-color: var(--primary-color);
+    --button-hover-text-color: var(--secondary-text-color);
+    --button-hover-color: var(--secondary-color);
+    --button-hover-color-2: var(--secondary-color);
+    
 
     --primary-text-color: black;
 
@@ -557,27 +583,33 @@ section {
     border-radius: 2rem;
 }
 
-.btn-color-1, .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
+.btn-color-1 {
+    border: black 0.1rem solid;
+    background-color: var(--button-color);
+    color: var(button-text-color);
+}
+
+.btn-color-2 {
+    border: black 0.1rem solid;
+    background-color: var(--button-color);
+    color: var(button-text-color);
 }
 
 .btn-color-1:hover, .btn-color-2:hover {
     cursor: pointer;
+    background-color: var(--button-hover-color);
+    color: var(--button-hover-text-color);
 }
 
-.btn-color-1, .btn-color-2:hover {
-    background: rgb(53, 53, 53);
-    color: var(--primary-color);
-}
-
+/*
 .btn-color-1:hover {
-    background: rgb(0, 0, 0);
+    background: var(--button-hover-color);
 }
 
 .btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
+    background-color: var(--button-hover-color-2);
 }
-
+*/
 .btn-container {
     gap: 1rem;
 }
@@ -696,11 +728,12 @@ article .icon {
 
 .project-title {
     margin: 1rem;
-    color: var(--secondary-color);
+    color: var(--details-container-text-color);
 }
 
 .project-btn {
-    color: var(--secondary-color);
+    color: var(--container-button-text-color);
+    background-color: var(--container-button-color);
     border-color: rgb(163, 163, 163)
 }
 
