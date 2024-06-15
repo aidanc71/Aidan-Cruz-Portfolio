@@ -40,7 +40,7 @@ p {
     --secondary-color: black;
 
     --primary-text-color: black;
-    --secondary-text-color: aqua;
+    --secondary-text-color: rgb(146, 255, 188);
     --details-container-text-color: var(--primary-text-color);
 
     --details-conatiner-bg-color: var(--primary-color);
@@ -53,7 +53,6 @@ p {
     --secondary-color: white;
 
     --primary-text-color: white;
-    --secondary-text-color: aqua;
     --details-container-text-color: black;
 
     --bg-menu-color: white;
@@ -63,28 +62,25 @@ p {
 }
 .redStyle {
     --primary-color: red;
-    --secondary-color: white;
+    --secondary-color: black;
 
-    --primary-text-color: white;
-    --secondary-text-color: aqua;
+    --primary-text-color: black;
 
     --alert-top-offset: 625px;
 }
 .orangeStyle {
     --primary-color: orange;
-    --secondary-color: white;
+    --secondary-color: black;
 
-    --primary-text-color: white;
-    --secondary-text-color: aqua;
+    --primary-text-color: black;
 
     --alert-top-offset: 625px;
 }
 .yellowStyle {
     --primary-color: yellow;
-    --secondary-color: white;
+    --secondary-color: black;
 
-    --primary-text-color: white;
-    --secondary-text-color: aqua;
+    --primary-text-color: black;
 
     --alert-top-offset: 625px;
 }
@@ -93,7 +89,6 @@ p {
     --secondary-color: white;
 
     --primary-text-color: white;
-    --secondary-text-color: aqua;
 
     --alert-top-offset: 625px;
 }
@@ -102,7 +97,6 @@ p {
     --secondary-color: white;
 
     --primary-text-color: white;
-    --secondary-text-color: aqua;
 
     --alert-top-offset: 625px;
 }
@@ -111,8 +105,6 @@ p {
     --secondary-color: white;
 
     --primary-text-color: white;
-    --secondary-text-color: aqua;
-
     --alert-top-offset: 625px;
 }
 

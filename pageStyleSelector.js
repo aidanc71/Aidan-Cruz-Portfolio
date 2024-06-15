@@ -70,10 +70,22 @@ const enableWhiteIcons = () =>
         }
         else
         {
+            if(blackDesktopPhoneIcon != null)
+            {
             blackDesktopPhoneIcon.classList.add("disabled");
+            }
+            if(bottomBlackDesktopPhoneIcon != null)
+            {
             bottomBlackDesktopPhoneIcon.classList.add("disabled");
+            }
+            if(whiteDesktopPhoneIcon != null)
+            {
             whiteDesktopPhoneIcon.classList.remove("disabled");
+            }
+            if(bottomWhiteDesktopPhoneIcon != null)
+            {
             bottomWhiteDesktopPhoneIcon.classList.remove("disabled");
+            }
         }
     }
 const enableBlackIcons = () =>
@@ -84,7 +96,7 @@ const enableBlackIcons = () =>
         blackIcons.forEach(icon => {
             icon.classList.remove("disabled");
         })
-        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
+            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
             {
                 whiteMobilePhoneIcon.classList.add("disabled");
                 bottomWhiteMobilePhoneIcon.classList.add("disabled");
@@ -93,10 +105,22 @@ const enableBlackIcons = () =>
             }
             else
             {
+                if(whiteDesktopPhoneIcon != null)
+                {
                 whiteDesktopPhoneIcon.classList.add("disabled");
+                }
+                if(bottomWhiteDesktopPhoneIcon != null)
+                {
                 bottomWhiteDesktopPhoneIcon.classList.add("disabled");
+                }
+                if(blackDesktopPhoneIcon != null)
+                {
                 blackDesktopPhoneIcon.classList.remove("disabled");
+                }
+                if(bottomBlackDesktopPhoneIcon != null)
+                {
                 bottomBlackDesktopPhoneIcon.classList.remove("disabled");
+                }
             }
     }
 

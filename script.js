@@ -36,7 +36,7 @@ function destroyIncorrectPhone()
     else
     {
         desktopPhoneIcon.classList.remove("disabled"); 
-
+        
         bottomDesktopPhoneIcon.classList.remove("disabled");
         bottomDesktopPhoneIcon.classList.add("contact-info-container");
     }
