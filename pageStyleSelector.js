@@ -44,7 +44,6 @@ const loadInitialStyle = () =>
                 console.log("hi");
                 styleButtons[i].click();
             }
-            i++;
             }
         
 };
@@ -159,7 +158,7 @@ darkStyleButton.addEventListener("click", () =>
     }
     else 
     {
-    return;
+        return;
     }
 });
 
@@ -176,7 +175,7 @@ redStyleButton.addEventListener("click", () =>
     }
     else 
     {
-    return;
+        return;
     }
 });
 
@@ -192,7 +191,7 @@ orangeStyleButton.addEventListener("click", () =>
     }
     else 
     {
-    return;
+        return;
     }
 });
 
@@ -208,7 +207,7 @@ yellowStyleButton.addEventListener("click", () =>
     }
     else 
     {
-    return;
+        return;
     }
 });
 greenStyleButton.addEventListener("click", () => 
@@ -230,7 +229,7 @@ greenStyleButton.addEventListener("click", () =>
 blueStyleButton.addEventListener("click", () => 
 {
     blueStyle = localStorage.getItem("blueStyle");
-    if(!document.body.classList.contains("blueStyle")) 
+    if(!document.body.classList.contains("blueStyle"))
     {
     disableAllStyles();
     document.body.classList.add("blueStyle");
@@ -239,14 +238,14 @@ blueStyleButton.addEventListener("click", () =>
     }
     else 
     {
-    return;
+        return;
     }
 });
 
 purpleStyleButton.addEventListener("click", () => 
 {
     purpleStyle = localStorage.getItem("purpleStyle");
-    if(!document.body.classList.contains("purpleStyle")) 
+    if(!document.body.classList.contains("purpleStyle"))
     {
     disableAllStyles();
     document.body.classList.add("purpleStyle");
