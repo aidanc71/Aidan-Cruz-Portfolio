@@ -41,7 +41,6 @@ const loadInitialStyle = () =>
             {
             if (styles[i] == "enabled") 
             {
-                console.log("hi");
                 styleButtons[i].click();
             }
             }
@@ -69,7 +68,6 @@ const disableAllStyles = () => {
 
 const enableWhiteIcons = () => 
     {
-        
         blackIcons.forEach(icon => {
             icon.classList.add("disabled");
         })
@@ -80,9 +78,15 @@ const enableWhiteIcons = () =>
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
         {
             blackMobilePhoneIcon.classList.add("disabled");
+            if(bottomBlackMobilePhoneIcon !== null)
+            {
             bottomBlackMobilePhoneIcon.classList.add("disabled");
+            }
             whiteMobilePhoneIcon.classList.remove("disabled");
+            if(bottomWhiteMobilePhoneIcon !== null)
+            {
             bottomWhiteMobilePhoneIcon.classList.remove("disabled");
+            }
         }
         else
         {
@@ -103,7 +107,8 @@ const enableWhiteIcons = () =>
             bottomWhiteDesktopPhoneIcon.classList.remove("disabled");
             }
         }
-    }
+    };
+    
 const enableBlackIcons = () =>
     {
         whiteIcons.forEach(icon => {
@@ -114,10 +119,22 @@ const enableBlackIcons = () =>
         })
             if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) 
             {
+                if(whiteMobilePhoneIcon != null)
+                {
                 whiteMobilePhoneIcon.classList.add("disabled");
+                }
+                if(bottomWhiteMobilePhoneIcon != null)
+                {
                 bottomWhiteMobilePhoneIcon.classList.add("disabled");
+                }
+                if(blackMobilePhoneIcon != null)
+                {
                 blackMobilePhoneIcon.classList.remove("disabled");
+                }
+                if(bottomBlackMobilePhoneIcon != null)
+                {
                 bottomBlackMobilePhoneIcon.classList.remove("disabled");
+                }
             }
             else
             {
@@ -138,7 +155,7 @@ const enableBlackIcons = () =>
                 bottomBlackDesktopPhoneIcon.classList.remove("disabled");
                 }
             }
-    }
+    };
 
 whiteStyleButton.addEventListener("click", () => 
 {
