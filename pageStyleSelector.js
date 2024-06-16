@@ -19,6 +19,8 @@ const blackBgIcon = document.querySelector("#bg-icon-black")*/
 
 const whiteIcons = document.querySelectorAll(".white-icon");
 const blackIcons = document.querySelectorAll(".black-icon");
+const styleButtons = [darkStyleButton, redStyleButton, orangeStyleButton, yellowStyleButton, greenStyleButton, blueStyleButton, purpleStyleButton];
+const styles = [darkStyle, redStyle, orangeStyle, yellowStyle, greenStyle, blueStyle, purpleStyle];
 
 const blackMobilePhoneIcon = document.querySelector("#mobile-phone");
 const blackDesktopPhoneIcon = document.querySelector("#desktop-phone");
@@ -32,6 +34,20 @@ const bottomWhiteDesktopPhoneIcon = document.querySelector("#bottom-desktop-phon
 let Style = localStorage.getItem("Style");
 const StyleButton = document.querySelector("#-style-button");
 */
+
+const loadInitialStyle = () => 
+{
+        for(let i = 0; i < styleButtons.length; i++)
+            {
+            if (styles[i] == "enabled") 
+            {
+                console.log("hi");
+                styleButtons[i].click();
+            }
+            i++;
+            }
+        
+};
 const disableAllStyles = () => {
     localStorage.setItem("darkStyle", null);
     localStorage.setItem("redStyle", null);
@@ -54,6 +70,7 @@ const disableAllStyles = () => {
 
 const enableWhiteIcons = () => 
     {
+        
         blackIcons.forEach(icon => {
             icon.classList.add("disabled");
         })
@@ -132,8 +149,8 @@ whiteStyleButton.addEventListener("click", () =>
 
 darkStyleButton.addEventListener("click", () => 
 {
-    darkStyle = localStorage.getItem("darkStyle")
-    if(darkStyle !== "enabled") 
+    darkStyle = localStorage.getItem("darkStyle");
+    if(!document.body.classList.contains("darkStyle")) 
     {
     disableAllStyles();
     document.body.classList.add("darkStyle");
@@ -146,10 +163,11 @@ darkStyleButton.addEventListener("click", () =>
     }
 });
 
+
 redStyleButton.addEventListener("click", () => 
 {
-    redStyle = localStorage.getItem("redStyle")
-    if(redStyle !== "enabled") 
+    redStyle = localStorage.getItem("redStyle");
+    if(!document.body.classList.contains("redStyle")) 
     {
     disableAllStyles();
     document.body.classList.add("redStyle");
@@ -164,8 +182,8 @@ redStyleButton.addEventListener("click", () =>
 
 orangeStyleButton.addEventListener("click", () => 
 {
-    orangeStyle = localStorage.getItem("orangeStyle")
-    if(orangeStyle !== "enabled") 
+    orangeStyle = localStorage.getItem("orangeStyle");
+    if(!document.body.classList.contains("orangeStyle")) 
     {
     disableAllStyles();
     document.body.classList.add("orangeStyle");
@@ -180,8 +198,8 @@ orangeStyleButton.addEventListener("click", () =>
 
 yellowStyleButton.addEventListener("click", () => 
 {
-    yellowStyle = localStorage.getItem("yellowStyle")
-    if(yellowStyle !== "enabled") 
+    yellowStyle = localStorage.getItem("yellowStyle");
+    if(!document.body.classList.contains("yellowStyle")) 
     {
     disableAllStyles();
     document.body.classList.add("yellowStyle");
@@ -195,8 +213,8 @@ yellowStyleButton.addEventListener("click", () =>
 });
 greenStyleButton.addEventListener("click", () => 
 {
-    greenStyle = localStorage.getItem("greenStyle")
-    if(greenStyle !== "enabled") 
+    greenStyle = localStorage.getItem("greenStyle");
+    if(!document.body.classList.contains("greenStyle")) 
     {
     disableAllStyles();
     document.body.classList.add("greenStyle");
@@ -211,8 +229,8 @@ greenStyleButton.addEventListener("click", () =>
 
 blueStyleButton.addEventListener("click", () => 
 {
-    blueStyle = localStorage.getItem("blueStyle")
-    if(blueStyle !== "enabled") 
+    blueStyle = localStorage.getItem("blueStyle");
+    if(!document.body.classList.contains("blueStyle")) 
     {
     disableAllStyles();
     document.body.classList.add("blueStyle");
@@ -227,8 +245,8 @@ blueStyleButton.addEventListener("click", () =>
 
 purpleStyleButton.addEventListener("click", () => 
 {
-    purpleStyle = localStorage.getItem("purpleStyle")
-    if(purpleStyle !== "enabled") 
+    purpleStyle = localStorage.getItem("purpleStyle");
+    if(!document.body.classList.contains("purpleStyle")) 
     {
     disableAllStyles();
     document.body.classList.add("purpleStyle");

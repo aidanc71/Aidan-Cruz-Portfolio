@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="mediaqueries.css"/>
     <script src="https://kit.fontawesome.com/7e2749952b.js" crossorigin="anony mous"></script>
 </head>
-<body onpageshow="destroyIncorrectPhone()">
+<body onpageshow="destroyIncorrectPhone(); loadInitialStyle()">
     <div class="disabled alert" id="copy-alert">
         <span id="alert-message"></span>
         <span class="close-btn" id="copy-alert-close-btn" onclick="closeAlert()">
