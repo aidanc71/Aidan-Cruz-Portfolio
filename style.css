@@ -41,7 +41,7 @@ p {
 
     --button-color: var(--secondary-text-color);
     --container-button-color: var(--secondary-color);
-    --button-text-color: var(--secondary-color);
+    --button-text-color: black;
     --container-button-text-color: var(--primary-color);
     --button-hover-text-color: var(--secondary-text-color);
     --button-hover-color: var(--secondary-color);
@@ -62,7 +62,7 @@ p {
 
     --button-color: var(--secondary-text-color);
     --container-button-color: var(--secondary-text-color);
-    --button-text-color: var(--secondary-color);
+    --button-text-color: black;
     --container-button-text-color: var(--primary-color);
     --button-hover-text-color: var(--secondary-text-color);
     --button-hover-color: rgb(38, 41, 49);
@@ -97,6 +97,15 @@ p {
 .orangeStyle {
     --primary-color: orange;
     --secondary-color: black;
+    --secondary-text-color: red;
+
+    --button-color: var(--secondary-text-color);
+    --container-button-color: var(--secondary-color);
+    --button-text-color: var(--secondary-color);
+    --container-button-text-color: var(--primary-color);
+    --button-hover-text-color: var(--secondary-text-color);
+    --button-hover-color: var(--secondary-color);
+    --button-hover-color-2: var(--secondary-color);
 
     --primary-text-color: black;
 
@@ -105,6 +114,15 @@ p {
 .yellowStyle {
     --primary-color: yellow;
     --secondary-color: black;
+    --secondary-text-color: orange;
+
+    --button-color: var(--secondary-text-color);
+    --container-button-color: var(--secondary-color);
+    --button-text-color: var(--secondary-color);
+    --container-button-text-color: var(--primary-color);
+    --button-hover-text-color: var(--secondary-text-color);
+    --button-hover-color: var(--secondary-color);
+    --button-hover-color-2: var(--secondary-color);
 
     --primary-text-color: black;
 
@@ -119,16 +137,34 @@ p {
     --alert-top-offset: 625px;
 }
 .blueStyle {
-    --primary-color: blue;
-    --secondary-color: white;
+    --primary-color: rgb(55, 55, 229);
+    --secondary-color: black;
 
     --primary-text-color: white;
 
     --alert-top-offset: 625px;
+    --secondary-text-color: rgb(207, 148, 255);
+
+    --button-color: var(--secondary-text-color);
+    --container-button-color: var(--secondary-color);
+    --button-text-color: var(--secondary-color);
+    --container-button-text-color: var(--primary-color);
+    --button-hover-text-color: var(--secondary-text-color);
+    --button-hover-color: var(--secondary-color);
+    --button-hover-color-2: var(--secondary-color);
 }
 .purpleStyle {
-    --primary-color: purple;
-    --secondary-color: white;
+    --primary-color: rgb(207, 148, 255);
+    --secondary-color: black;
+    --secondary-text-color: blue;
+
+    --button-color: var(--secondary-text-color);
+    --container-button-color: var(--secondary-color);
+    --button-text-color: var(--secondary-color);
+    --container-button-text-color: var(--primary-color);
+    --button-hover-text-color: var(--secondary-text-color);
+    --button-hover-color: var(--secondary-color);
+    --button-hover-color-2: var(--secondary-color);
 
     --primary-text-color: white;
     --alert-top-offset: 625px;
@@ -586,13 +622,13 @@ section {
 .btn-color-1 {
     border: black 0.1rem solid;
     background-color: var(--button-color);
-    color: var(button-text-color);
+    color: var(--button-text-color);
 }
 
 .btn-color-2 {
     border: black 0.1rem solid;
     background-color: var(--button-color);
-    color: var(button-text-color);
+    color: var(--button-text-color);
 }
 
 .btn-color-1:hover, .btn-color-2:hover {
@@ -775,10 +811,10 @@ article .icon {
 }
 
 .contact-info-container a:hover {
-    color: rgb(49, 193, 166);
+    color: var(--secondary-text-color);
     text-decoration: underline;
     text-underline-offset: 0.1rem;
-    text-decoration-color: rgb(35, 110, 96);
+    text-decoration-color: var(--secondary-text-color);
 }
 
 /* FOOTER SECTION */

@@ -22,6 +22,9 @@ const blackIcons = document.querySelectorAll(".black-icon");
 const styleButtons = [darkStyleButton, redStyleButton, orangeStyleButton, yellowStyleButton, greenStyleButton, blueStyleButton, purpleStyleButton];
 const styles = [darkStyle, redStyle, orangeStyle, yellowStyle, greenStyle, blueStyle, purpleStyle];
 
+const bgButtonsMenu = document.querySelector("#background-buttons-menu");
+const bgButtons = document.querySelector("#background-buttons");
+
 const blackMobilePhoneIcon = document.querySelector("#mobile-phone");
 const blackDesktopPhoneIcon = document.querySelector("#desktop-phone");
 const whiteMobilePhoneIcon = document.querySelector("#mobile-phone-white");
@@ -35,17 +38,31 @@ let Style = localStorage.getItem("Style");
 const StyleButton = document.querySelector("#-style-button");
 */
 
+function closeBgMenu()
+{
+    styles.forEach(style =>
+    {
+        if (style === "enabled")
+        {
+        toggleBgMenu()
+        }
+    });
+}
+
 const loadInitialStyle = () => 
 {
-        for(let i = 0; i < styleButtons.length; i++)
-            {
-            if (styles[i] == "enabled") 
-            {
-                styleButtons[i].click();
-            }
-            }
-        
+    closeBgMenu();
+    
+    for(let i = 0; i < styleButtons.length; i++)
+    {
+        if (styles[i] == "enabled") 
+        {
+            styleButtons[i].click();
+        }
+    }
 };
+
+
 const disableAllStyles = () => {
     localStorage.setItem("darkStyle", null);
     localStorage.setItem("redStyle", null);
@@ -190,7 +207,7 @@ redStyleButton.addEventListener("click", () =>
     enableBlackIcons();
     localStorage.setItem("redStyle", "enabled");
     }
-    else 
+    else
     {
         return;
     }
