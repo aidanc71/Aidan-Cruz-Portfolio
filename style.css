@@ -156,7 +156,7 @@ p {
 .purpleStyle {
     --primary-color: rgb(207, 148, 255);
     --secondary-color: black;
-    --secondary-text-color: blue;
+    --secondary-text-color: rgb(62, 24, 159);
 
     --button-color: var(--secondary-text-color);
     --container-button-color: var(--secondary-color);
@@ -330,10 +330,10 @@ a {
 }
 
 .nav-links a:hover {
-    color: grey;
+    color: var(--secondary-text-color);
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+    text-decoration-color: var(--secondary-text-color);
 }
 
 .logo {
