@@ -154,19 +154,19 @@
   
     @keyframes aspiring {
       0%, 19% {
-          transform: translateX(+2.25rem);
+          transform: translateX(+4.35rem);
       }
       20%, 39% {
-          transform: translateX(+2.1rem);
+          transform: translateX(+4.35rem);
       }
       40%, 59% {
-          transform: translateX(+3.5rem);
+          transform: translateX(+4.35rem);
       }
       60%, 79% {
           transform: translateX(+4.35rem);
       }
       81%, 100% {
-          transform: translateX(+2.4rem);
+          transform: translateX(+4.35rem);
       }
   }
 
