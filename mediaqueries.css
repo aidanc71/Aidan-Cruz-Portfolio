@@ -172,19 +172,19 @@
 
   @keyframes words {
     0%, 20% {
-        content: "Game Designer";
+        content: "Designer";
     }
     21%, 40% {
-        content: "Content Creator";
+        content: "Developer";
     }
     41%, 60% {
-        content: "Video Editor";
+        content: "Editor";
     }
     61%, 80% {
-        content: "Employee";
+        content: "Producer";
     }
     81%, 100% {
-        content: "Web Developer";
+        content: "Employee";
     }
 
 }
