@@ -52,6 +52,14 @@ function closeBgMenu()
 const loadInitialStyle = () => 
 {
     closeBgMenu();
+    darkStyle = localStorage.getItem("darkStyle");
+    if(!document.body.classList.contains("darkStyle")) 
+    {
+    disableAllStyles();
+    document.body.classList.add("darkStyle");
+    enableWhiteIcons();
+    localStorage.setItem("darkStyle", "enabled");
+    }
     
     for(let i = 0; i < styleButtons.length; i++)
     {
