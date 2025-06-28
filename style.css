@@ -726,6 +726,7 @@ section {
 }
 
 .article-container {
+    position: relative;
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
@@ -763,14 +764,26 @@ article .icon {
 }
 
 .project-title {
+    text-align: center;
     margin: 1rem;
     color: rgb(255, 255, 255);
+}
+
+.project-subtitle {
+    font-size: small;
+    color: rgb(154, 154, 154);
 }
 
 .project-btn {
     color: var(--container-button-text-color);
     background-color: var(--container-button-color);
     border-color: rgb(163, 163, 163)
+}
+
+.project-status {
+    position: absolute; top: 0; right: 0;
+    width: 10%;
+    height: 10%;
 }
 
 /* CONTACT SECTION */
